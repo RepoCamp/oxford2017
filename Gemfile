@@ -35,12 +35,14 @@ gem 'jbuilder', '~> 2.5'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
-  gem 'byebug', platforms: [:mri, :mingw, :x64_mingw]
-  # Adds support for Capybara system testing and selenium driver
-  gem 'capybara', '~> 2.13'
-  gem 'selenium-webdriver'
-end
+   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+   gem 'byebug', platform: :mri
+   gem 'capybara'
+   gem 'database_cleaner'
+   gem 'rspec', "~> 3.5"
+   gem 'rspec-rails', "~> 3.5"
+   gem 'shoulda-matchers'
+ end
 
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
@@ -64,5 +66,4 @@ gem 'devise'
 gem 'devise-guests', '~> 0.6'
 group :development, :test do
   gem 'fcrepo_wrapper'
-  gem 'rspec-rails'
 end
