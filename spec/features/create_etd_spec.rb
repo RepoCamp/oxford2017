@@ -33,6 +33,8 @@ RSpec.feature 'Create a Etd', js: false do
       fill_in 'Creator', with: 'Quest, Jane'
       fill_in 'Keyword', with: 'Adventure'
       select('In Copyright', from: 'Rights statement')
+      click_link("Additional fields")
+      fill_in "Degree", with: "Bachelor of Arts with Honors"
       choose('open')
       check('agreement')
       click_on('Files')
