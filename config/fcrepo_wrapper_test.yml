@@ -2,4 +2,5 @@
 port: 8986
 enable_jms: false
 version: 4.7.4
+download_dir: /var/tmp
 fcrepo_home_dir: /var/tmp/fcrepo4-test-data
