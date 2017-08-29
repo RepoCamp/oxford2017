@@ -2,4 +2,5 @@
 port: 8984
 enable_jms: false
 version: 4.7.4
-fcrepo_home_dir: /var/tmp/fcrepo4-development-data
+fcrepo_home_dir: tmp/fcrepo4-development-data
+download_dir: /var/tmp
