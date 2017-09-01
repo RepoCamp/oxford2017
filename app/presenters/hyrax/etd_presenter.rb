@@ -2,5 +2,6 @@
 #  `rails generate hyrax:work Etd`
 module Hyrax
   class EtdPresenter < Hyrax::WorkShowPresenter
+    delegate :degree, to: :solr_document
   end
 end
