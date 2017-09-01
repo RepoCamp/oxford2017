@@ -10,7 +10,7 @@ class Etd < ActiveFedora::Base
 
   self.human_readable_type = 'Etd'
   property :degree, predicate: "http://vivoweb.org/ontology/core#AcademicDegree" do |index|
-    index.as :stored_searchable
+    index.as :stored_searchable, :facetable
   end
   # This must be included at the end, because it finalizes the metadata
   # schema (by adding accepts_nested_attributes)
