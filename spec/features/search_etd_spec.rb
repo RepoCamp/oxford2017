@@ -30,6 +30,10 @@ RSpec.feature 'Search for an ETD' do
       expect(page).to have_content etd.creator.first
       expect(page).to have_content etd.keyword.first
       expect(page).to have_content etd.degree.first
+      expect(page).to have_xpath("//h3", text: "Creator")
+      expect(page).to have_link(etd.creator.first, class: "facet_select")
+      expect(page).to have_xpath("//h3", text: "Degree")
+      expect(page).to have_link(etd.degree.first, class: "facet_select")
     end
   end
 end
