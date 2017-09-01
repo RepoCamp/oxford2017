@@ -29,4 +29,10 @@ describe EtdPresenter do
   # them to the solr document
   it { is_expected.to delegate_method(:title).to(:solr_document) }
   it { is_expected.to delegate_method(:degree).to(:solr_document) }
+
+  context "emoji replacement" do
+    it "replaces the word skull with a skull emoji" do
+      expect(presenter.emoji_title).to eq("Journey to 💀 Island")
+    end
+  end
 end
