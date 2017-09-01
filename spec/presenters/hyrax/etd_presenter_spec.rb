@@ -20,8 +20,6 @@ RSpec.describe Hyrax::EtdPresenter do
     )
   end
 
-  let(:ability) { Ability.new(user) }
-
   let(:presenter) do
     described_class.new(SolrDocument.new(etd.to_solr), nil)
   end
