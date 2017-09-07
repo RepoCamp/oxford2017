@@ -42,6 +42,7 @@ group :development, :test do
    gem 'rspec', "~> 3.5"
    gem 'rspec-rails', "~> 3.5"
    gem 'shoulda-matchers'
+   gem 'ffaker'
  end
 
 group :development do
